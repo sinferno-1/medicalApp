@@ -1,0 +1,201 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 67108864 bytes for Failed to commit area from 0x00000000fc000000 to 0x0000000100000000 of length 67108864.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./src/hotspot/os/windows/os_windows.cpp:3386), pid=10400, tid=5932
+#
+# JRE version:  (11.0.18+10) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.18+10-LTS, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xmx64m -Xms64m -Dorg.gradle.appname=gradlew org.gradle.wrapper.GradleWrapperMain app:installDebug
+
+Host: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  , 8 cores, 5G,  Windows 11 , 64 bit Build 22621 (10.0.22621.2070)
+Time: Mon Sep 11 14:42:42 2023 India Standard Time elapsed time: 0.129235 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000018594041800):  JavaThread "Unknown thread" [_thread_in_vm, id=5932, stack(0x0000001ab7f00000,0x0000001ab8000000)]
+
+Stack: [0x0000001ab7f00000,0x0000001ab8000000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x62bf8a]
+V  [jvm.dll+0x7b8fb9]
+V  [jvm.dll+0x7ba6a8]
+V  [jvm.dll+0x7bad83]
+V  [jvm.dll+0x250248]
+V  [jvm.dll+0x62929a]
+V  [jvm.dll+0x61d855]
+V  [jvm.dll+0x30c32c]
+V  [jvm.dll+0x30c1b2]
+V  [jvm.dll+0x310ec6]
+V  [jvm.dll+0x356f0f]
+V  [jvm.dll+0x356940]
+V  [jvm.dll+0x2e9348]
+V  [jvm.dll+0x2ea4a6]
+V  [jvm.dll+0x792e07]
+V  [jvm.dll+0x79458f]
+V  [jvm.dll+0x363c69]
+V  [jvm.dll+0x775d70]
+V  [jvm.dll+0x3d297f]
+V  [jvm.dll+0x3d4d11]
+C  [jli.dll+0x5207]
+C  [ucrtbase.dll+0x29363]
+C  [KERNEL32.DLL+0x126ad]
+C  [ntdll.dll+0x5aa68]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000018591d99f30, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000018594059800 GCTaskThread "GC Thread#0" [stack: 0x0000001ab8000000,0x0000001ab8100000] [id=7956]
+  0x000001859405f000 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000001ab8100000,0x0000001ab8200000] [id=18656]
+  0x0000018594061800 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000001ab8200000,0x0000001ab8300000] [id=19756]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff9a37d8b17]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001859403d3c0] Heap_lock - owner thread: 0x0000018594041800
+
+Heap address: 0x00000000fc000000, size: 64 MB, Compressed Oops mode: Non-zero based: 0x00000000fc000000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.087 Loaded shared library C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff767ba0000 - 0x00007ff767bad000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\java.exe
+0x00007ff9fd130000 - 0x00007ff9fd344000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff9fbad0000 - 0x00007ff9fbb94000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff9fa890000 - 0x00007ff9fac34000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00000000701a0000 - 0x00000000704d1000 	C:\Program Files\Norton Security\NortonData\22.22.9.11\Definitions\IPSDefs\20230816.064\IPSEng64.dll
+0x00007ff9fcf00000 - 0x00007ff9fcfb0000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff9fc570000 - 0x00007ff9fc617000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff9fc110000 - 0x00007ff9fc1b6000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff9fc3b0000 - 0x00007ff9fc4c7000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff9fbc80000 - 0x00007ff9fbc88000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff9fa770000 - 0x00007ff9fa881000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff9d97b0000 - 0x00007ff9d97c7000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\jli.dll
+0x00007ff9faf50000 - 0x00007ff9fb0fa000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff9fa680000 - 0x00007ff9fa6a6000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff9fb280000 - 0x00007ff9fb2a9000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff9face0000 - 0x00007ff9fadf9000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff9fac40000 - 0x00007ff9facda000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff9d9c50000 - 0x00007ff9d9c65000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\VCRUNTIME140.dll
+0x00007ff9e9310000 - 0x00007ff9e959f000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.2070_none_2713e6537381f706\COMCTL32.dll
+0x00007ff9fc370000 - 0x00007ff9fc3a1000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff9b77d0000 - 0x00007ff9b786b000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\msvcp140.dll
+0x00007ff9a34e0000 - 0x00007ff9a4072000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\server\jvm.dll
+0x00007ff9eaeb0000 - 0x00007ff9eaeb9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff9fc4f0000 - 0x00007ff9fc561000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff9f30a0000 - 0x00007ff9f30d4000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff9f14a0000 - 0x00007ff9f14aa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff9f9500000 - 0x00007ff9f9518000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff9e1350000 - 0x00007ff9e1360000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\verify.dll
+0x00007ff9f8000000 - 0x00007ff9f822e000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff9fc790000 - 0x00007ff9fcb1a000 	C:\WINDOWS\System32\combase.dll
+0x00007ff9fbba0000 - 0x00007ff9fbc77000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ff9e5470000 - 0x00007ff9e54a2000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff9fae70000 - 0x00007ff9faeea000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff9d8410000 - 0x00007ff9d8438000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\java.dll
+0x00007ff9e0ed0000 - 0x00007ff9e0eda000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\jimage.dll
+0x00007ff9d5e00000 - 0x00007ff9d5e18000 	C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin;C:\WINDOWS\SYSTEM32;C:\Program Files\Norton Security\NortonData\22.22.9.11\Definitions\IPSDefs\20230816.064;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.2070_none_2713e6537381f706;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin\server
+
+VM Arguments:
+jvm_args: -Xmx64m -Xms64m -Dorg.gradle.appname=gradlew 
+java_command: org.gradle.wrapper.GradleWrapperMain app:installDebug
+java_class_path (initial): C:\Users\ankit\Desktop\Desktop\S\p1\android\\gradle\wrapper\gradle-wrapper.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 67108864                                  {product} {command line}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 67108864                                  {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5836300                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122910970                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122910970                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\
+CLASSPATH=C:\Users\ankit\Desktop\Desktop\S\p1\android\\gradle\wrapper\gradle-wrapper.jar
+PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\ankit\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\ankit\AppData\Local\Programs\Python\Python311\;C:\Users\ankit\AppData\Local\Microsoft\WindowsApps;C:\Users\ankit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ankit\AppData\Roaming\npm;C:\Users\ankit\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Users\ankit\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\ankit\AppData\Local\Programs\Python\Python311\Scripts;C:\MinGW\bin;
+USERNAME=ankit
+LANG=en_US.UTF-8
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD
+TMP=C:\Users\ankit\AppData\Local\Temp
+TEMP=C:\Users\ankit\AppData\Local\Temp
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 11 , 64 bit Build 22621 (10.0.22621.2070)
+OS uptime: 1 days 19:25 hours
+
+CPU:total 8 (initial active 8) (8 cores per cpu, 2 threads per core) family 23 model 24 stepping 1 microcode 0x0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx, sha, fma
+
+Memory: 4k page, system-wide physical 6081M (89M free)
+TotalPageFile size 16081M (AvailPageFile size 58M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 60M, peak: 124M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.18+10-LTS) for windows-amd64 JRE (11.0.18+10-LTS), built on Jan 18 2023 15:56:47 by "MicrosoftCorporation" with MS VC++ 15.9 (VS2017)
+
+END.

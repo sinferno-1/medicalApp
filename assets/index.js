@@ -1,0 +1,1 @@
+export {default as Hoo} from './hoo.svg'

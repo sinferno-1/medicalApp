@@ -1,0 +1,7 @@
+export {default as Hoo} from './Hoo.svg'
+export {default as Presc} from './Presc.svg'
+export {default as Account} from './Account.svg'
+export {default as FileUp} from './FileUp.svg'
+export {default as Group} from './Group.svg'
+export {default as Pro} from './Pro.svg'
+export {default as PS} from './PS.svg'
