@@ -9,7 +9,7 @@ frontend for a medical drugs ordering app.
 <img src="https://github.com/user-attachments/assets/a4db9754-d28c-446d-9a95-db4d83414b96" alt="Image 3" style="width: 20%; border-radius: 5px;">
 <img src="https://github.com/user-attachments/assets/9ea30da5-4c46-4fef-8a2a-5103c1ea9296" alt="Image 4" style="width: 20%; border-radius: 5px;">
 <img src="https://github.com/user-attachments/assets/9738bb04-559e-483d-8e04-23a32b44145b" alt="Image 5" style="width: 20%; border-radius: 5px;">
-<img src="(https://github.com/user-attachments/assets/9e8a8e59-cb08-4d5d-bb1c-334addb02bae" alt="Image 6" style="width: 20%; border-radius: 5px;">
+<img src="https://github.com/user-attachments/assets/9e8a8e59-cb08-4d5d-bb1c-334addb02bae" alt="Image 6" style="width: 20%; border-radius: 5px;">
 <img src="https://github.com/user-attachments/assets/f8646026-e965-4d47-859e-d339ae96fa4a" alt="Image 7" style="width: 20%; border-radius: 5px;">
 <img src="https://github.com/user-attachments/assets/7222a0d3-18ba-414d-ab2c-c2cb13e97f0d" alt="Image 8" style="width: 20%; border-radius: 5px;">
 
