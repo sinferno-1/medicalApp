@@ -1,12 +1,12 @@
-![IMG-20230803-WA0005](https://github.com/user-attachments/assets/904f0b79-f287-4e2b-95d9-37116a1fe252)##  ABOUT
+##  ABOUT
 frontend for a medical drugs ordering app.
 ## Screenshots
 
 <table> 
   <tr>
      <td> ![IMG-20230803-WA0005](https://github.com/user-attachments/assets/6c82fab0-ea62-410c-8b6a-cf1c1bac625d) </td>
-     <td> (https://github.com/user-attachments/assets/23a6f7c7-9350-4717-935f-1216a3aa0935)</td>
-     <td> (https://github.com/user-attachments/assets/19b5da41-1684-4fc1-8541-72e44ab958f2) </td>
+     <td> https://github.com/user-attachments/assets/23a6f7c7-9350-4717-935f-1216a3aa0935</td>
+     <td> https://github.com/user-attachments/assets/19b5da41-1684-4fc1-8541-72e44ab958f2 </td>
      <td>(https://github.com/user-attachments/assets/1128e328-81be-415a-983f-a58b5afd664b) </td>
   </tr>
   <tr> 
