@@ -4,7 +4,7 @@ frontend for a medical drugs ordering app.
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
 
-<img src="https://github.com/user-attachments/assets/183e2829-1fa1-416f-b805-e4e38ec5424e" alt="Image 1" style="width: 25%%; border-radius: 5px;">
+<img src="https://github.com/user-attachments/assets/183e2829-1fa1-416f-b805-e4e38ec5424e" alt="Image 1" style="width: 25%; border-radius: 5px;">
 <img src="https://github.com/user-attachments/assets/9a51b06c-f187-4e74-8b15-215cae8ae5c7" alt="Image 2" style="width: 25%; border-radius: 5px;">
 <img src="https://github.com/user-attachments/assets/a4db9754-d28c-446d-9a95-db4d83414b96" alt="Image 3" style="width: 25%; border-radius: 5px;">
 <img src="https://github.com/user-attachments/assets/9ea30da5-4c46-4fef-8a2a-5103c1ea9296" alt="Image 4" style="width: 25%; border-radius: 5px;">
